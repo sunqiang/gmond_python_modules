@@ -127,7 +127,7 @@ def metric_init(params):
     
     define_device = False
     for para in params.keys():
-         if para.startswith('target_device'): define_device = True
+        if para.startswith('target_device'): define_device = True
     if not define_device:
         params["target_device0"] = "lo"
     
